@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:weightSum="1"
+    android:id="@+id/activity_main2"
+    android:background="#222222"
+    android:elevation="@android:dimen/dialog_min_width_minor">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_gravity="center"
+
+        android:src="@drawable/ic_room_white_24dp"
+        app:fabSize="normal"
+        app:elevation="11dp"
+        tools:layout_gravity="center"
+
+        app:backgroundTint="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Checkin Here"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+</LinearLayout>
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="#222222"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckIN"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textStyle="normal|bold"
+            android:textAllCaps="false"
+            android:typeface="serif"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="12sp"
+            android:lineSpacingExtra="8sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+</FrameLayout>

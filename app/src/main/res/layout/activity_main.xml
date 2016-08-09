@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sobin.checkins.MainActivity"
+    android:baselineAligned="false">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="#222222"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckIN"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textStyle="normal|bold"
+            android:textAllCaps="false"
+            android:typeface="serif"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="12sp"
+            android:lineSpacingExtra="8sp" />
+
+    </android.support.v7.widget.Toolbar>
+<FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_room_white_24dp"
+        app:fabSize="normal"
+        app:elevation="11dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        tools:layout_gravity="bottom|right"
+        app:backgroundTint="@color/colorAccent"/>
+
+    <ListView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item"/>
+</FrameLayout>
+
+</LinearLayout>

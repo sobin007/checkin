@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_location"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sobin.checkins.AddLocation"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/place_autocomplete_prediction_horizontal_margin"
+    android:layout_marginRight="@dimen/place_autocomplete_powered_by_google_start">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/place_autocomplete_prediction_primary_text"
+        android:padding="@dimen/place_autocomplete_progress_horizontal_margin">
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:id="@+id/image"
+    android:src="@drawable/camera"
+    android:adjustViewBounds="true"
+    android:background="@android:color/white" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location Name"
+        android:layout_marginBottom="@dimen/place_autocomplete_prediction_secondary_text"/>
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location Address"
+        android:layout_marginBottom="@dimen/place_autocomplete_prediction_secondary_text"/>
+    <EditText
+        android:id="@+id/des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:layout_marginBottom="@dimen/place_autocomplete_prediction_secondary_text"/>
+    <Button
+        android:id="@+id/bnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE LOCATION"
+        android:layout_marginBottom="@dimen/place_autocomplete_prediction_secondary_text"
+        android:background="#bdf708"/>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>
